@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <tittle></tittle>
+        <link rel ="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <section>
+            <h1>Hello TRUPTI!</h1>
+            <h2>Write the name and a picture will popup according to ur personality</h2>
+            <div class ="name">
+                <label>ENTER YOUR NAME</label><br>
+                <input type="text" name="" id ="nameid">
+            </div>
+            <div class ="img">
+                <img src="house.jpg" width="400" height="400 " id="imgid">
+                <button id="buttonid">Click here</button>
+            </div>
+        </section>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("#buttonid").click(function(){
+                const naam= $('#nameid').val()
+                console.log(`https://joeschmoe.io/api/v1/${naam}`);
+                $("img").attr("src", '');
+            $("img").attr("src", `https://joeschmoe.io/api/v1/${naam}`);
+  });
+});
+        </script>
+
+       
+    </body>
+    </html>
