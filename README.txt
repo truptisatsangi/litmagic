@@ -1,2 +1,2 @@
 # litmagic
-This shows the picture relevant to your name . It is developed using html, css and javascript.
+This shows the picture relevant to name entered . It is developed using html, css and javascript.
